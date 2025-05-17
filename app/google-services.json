@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "311787890209",
+    "project_id": "bubt-forum",
+    "storage_bucket": "bubt-forum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311787890209:android:fea978b852240ae10b6560",
+        "android_client_info": {
+          "package_name": "com.example.bubtforun"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfb_Z7d7zrYglCVYXTFzIAf7vQnVyMqlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311787890209:android:9ca90108fa7a52c50b6560",
+        "android_client_info": {
+          "package_name": "com.example.simplesocialmediaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfb_Z7d7zrYglCVYXTFzIAf7vQnVyMqlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

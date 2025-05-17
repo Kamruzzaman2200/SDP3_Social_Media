@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#4F78D0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_signin"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="30dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="SIGN IN"
+            android:textColor="#4F78D0"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/et_signin_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Please Enter Email ID"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="180dp"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:textColor="#4F78D0"
+            android:textColorHint="#4F78D0"
+            android:backgroundTint="#4F78D0"/>
+
+        <EditText
+            android:id="@+id/et_signin_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Please Enter Password"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="120dp"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:textColor="#4F78D0"
+            android:textColorHint="#4F78D0"
+            android:backgroundTint="#4F78D0"/>
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="40dp"
+            android:text="Sign In"/>
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Here"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="70dp"
+            android:clickable="true"
+            android:textColor="#4F78D0"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to register your account"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="140dp"
+            android:textColor="#000000"
+            android:textSize="14sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_register"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="30dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="REGISTER"
+            android:textColor="#4F78D0"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_register_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="top|center_horizontal"
+            app:cardCornerRadius="85dp"
+            app:cardElevation="20dp"
+            android:layout_marginTop="60dp"
+            app:cardBackgroundColor="#4F78D0">
+
+            <ImageView
+                android:id="@+id/imv_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/et_register_uname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Please Enter Display Name"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="300dp"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="#4F78D0"
+            android:textColorHint="#4F78D0"
+            android:backgroundTint="#4F78D0"/>
+
+        <EditText
+            android:id="@+id/et_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Please Enter Email ID"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="240dp"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:textColor="#4F78D0"
+            android:textColorHint="#4F78D0"
+            android:backgroundTint="#4F78D0"/>
+
+        <EditText
+            android:id="@+id/et_register_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Please Enter Password"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="180dp"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:textColor="#4F78D0"
+            android:textColorHint="#4F78D0"
+            android:backgroundTint="#4F78D0"/>
+
+        <EditText
+            android:id="@+id/et_register_confpasswd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Please Confirm Password"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="120dp"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:textColor="#4F78D0"
+            android:textColorHint="#4F78D0"
+            android:backgroundTint="#4F78D0"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="40dp"
+            android:text="REGISTER"/>
+
+        <TextView
+            android:id="@+id/tv_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Here"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="70dp"
+            android:clickable="true"
+            android:textColor="#4F78D0"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to signin to your account"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="140dp"
+            android:textColor="#000000"
+            android:textSize="14sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
